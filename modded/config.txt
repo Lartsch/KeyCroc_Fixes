@@ -1,0 +1,91 @@
+#!/bin/bash
+#######################################
+#      _-^^-_                         #
+#  ---=>====<^^..                     #
+#      "    "      Key Croc by Hak5   #
+#######################################
+#This configuration file is used to set default variables
+
+# DEBUG ON
+
+DUCKY_LANG de
+
+### OPTIONAL CONFIGURATION ###
+#
+############ NETWORK ############
+#
+# SSH [DISABLE, ENABLE]
+#   (Disabled by default)
+#   (Enable to allow SSH access in attack mode)
+
+# WIFI_SSID [SSID]
+# WIFI_PASS [PASS]
+#   (Omit WIFI_PASS for open networks)
+#   (Omit both WIFI_SSID and WIFI_PASS to disable)
+#
+# DNS [address 1] [address 2]
+#   (Configure DNS servers, applies to both, hosted AP or connect to AP)
+#
+# WIFI_AP [DISABLE, ENABLE]
+#   (Disabled by default)
+#   (Enable to host AP instead of connecting to AP)
+#   (WIFI_SSID and WIFI_PASS are then used for AP setup instead of connecting to an AP)
+
+# WIFI_HIDE_AP [DISABLE, ENABLE]
+#   (Disabled by default)
+#   (Enable to hide SSID of AP, e.g. dont broadcast)
+
+# AUTO_ATTACKMODE [ENABLE, DISABLE]
+#   (Default is DISABLE)
+#   (Choose if ATTACKMODE HID should be issued automatically on boot)
+#   (If enabled, a hid keyboard device is present on boot and no manual VID/PID is set from config.txt,
+#   hardware properties will be cloned)
+#   If disabled, the ATTACKMODE is not set during the boot process. It has to be set in the payloads. This makes
+#   attacks more stealth
+
+# MATCHLESS [ENABLE, DISABLE]
+#   (Default is ENABLE)
+#   (Deactive matchless payload execution, mostly meant for debugging purposes when you want to manually execute them via SSH)
+
+############ DEVICE CONFIG ############
+# NOTE: VID AND PID SHOULD BE SET TOGETHER,
+# AND WILL DISABLE AUTO VID/PID CLONING
+#
+# VID [VID_0X<vid hex>]
+#
+# PID [PID_0X<pid hex>]
+#
+# MAN [MAN_label]
+#
+# PROD [PROD_label]
+#
+# VID VID_0X046A
+# PID PID_0X0023
+#
+#
+# VID VID_0X0A5C
+# PID PID_0X3025
+# MAN MAN_LITE-ON
+# PROD PROD_Keyboard
+#
+############ PROTECTED ARMING MODE ############
+# WARNING: MISCONFIGURATIONS BELOW WILL
+# LOCK YOU OUT OF YOUR DEVICE.
+#
+# ARMING_PASS [password]
+# Requires [password] to typed on the keyboard attached to the Key Croc to enter arming mode.
+#
+# ARMING_TIMEOUT [seconds]
+# (OPTIONAL WITH ARMING_PASS) Defining this adds a timeout to the protected arming mode listener
+#
+# EXAMPLE:
+# ARMING_PASS hak5croc
+# ARMING_TIMEOUT 5
+#
+# This configuration will give you 5 seconds to press the button after typing hak5croc on the keyboard
+# attached to the Key Croc
+#
+#
+# ### ADDITIONAL HELP ###
+# https://www.hak5.org/croc-help
+
