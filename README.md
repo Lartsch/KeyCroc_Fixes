@@ -24,11 +24,11 @@ NOTE: Backups are good
 
 1. Make sure your Key Croc uses the firmware 1.3-stable from 2020-06-26, if not, download and install the update as described in the Quick Start Guide
 2. Download the required files
-    - Complete directory modfiles/
+    - Complete directory modded/
     - install.sh
 3. Enter arming mode on the Key Croc by plugging it in, waiting for 10-15 seconds and then pressing the hidden button with a SIM tool or similar - your notebook should show the KeyCroc udisk as a normal USB storage device after a few seconds and the LED will blink blue
 4. Move the downloaded files:
-    - modfiles directory + install.sh --> udisk/archive/
+    - modded/ folder + install.sh --> udisk/archive/
 5. Edit the config.txt in the udisk root to connect your Key Croc to the internet using your local WiFi or by hosting a hotspot from your phone:
     - Edit `WIFI_SSID` and `WIFI_PASS` correspondingly
     - Make sure that `SSH` is set to `ENABLE`
@@ -41,7 +41,7 @@ NOTE: Backups are good
     - Use Putty or another SSH client with the Key Croc's local IP as host and 22 as port
     - Use the default credentials to log in: `root|hak5croc`
 7. Run the following commands:
-    - `cd /root/udisk/archive/modfiles`
+    - `cd /root/udisk/archive`
     - `find . -type f -exec sed -i 's/\r$//' {} +`  
     *(this makes sure that all downloaded files use Unix EOL, in case they were transferred from Windows)*
     - `chmod +x install.sh`
