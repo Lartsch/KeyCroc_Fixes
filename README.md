@@ -4,7 +4,7 @@ Also some additional features (see below...)
 Also some additional notes on KeyCroc payload behavior that come short in official docs.  
 Most of it is dirty. Make sure to create pull requests if you improve it.  
 
-#### Note: This is meant for power users of the Hak5 KeyCroc
+#### Note: This is meant for power users of the Hak5 KeyCroc. Run diff with the original files if you need to see the changes made / for your safety.
 
  1. [Installation](#installation)
  2. [Included mods](#included-mods)
