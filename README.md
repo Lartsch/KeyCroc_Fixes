@@ -1,6 +1,7 @@
 # KeyCroc_Fixes
 Some fixes for the shi**y KeyCroc firmware/framework that has a lot of bugs.  
 Also some additional features (see below...)  
+Also some additional notes on KeyCroc payload behavior that come short in official docs.  
 Most of it is dirty. Make sure to create pull requests if you improve it.  
 
 #### Note: This is meant for power users of the Hak5 KeyCroc
