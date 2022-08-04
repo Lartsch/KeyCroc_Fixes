@@ -89,7 +89,7 @@ This firmware modification fixes the badly implemented matchless payload detecti
 #### Configuration
 No configuration needed.
 #### Usage
-Write matchless payloads just like described in the official docs. Simply omit any MATCH commands or comment them out for the payload to run on boot. **Also note the following considering the execution of payloads using these framework mods. Also applies to some of the weird stock behaviour:**
+Write matchless payloads just like described in the official docs. Simply omit any MATCH commands or comment them out with # for the payload to run on boot. **Also note the following considering the execution of payloads using these framework mods. Also applies to some of the weird stock behaviour:**
 - MATCHLESS + AUTO_ATTACKMODE ENABLE + KEYBOARD: No need to set the attack mode to HID in the payload. Keyboard specs will be cloned as long as no overwrite is present in config.txt and the keyboard is plugged in before the Key Croc boots.
 - MATCHLESS + AUTO_ATTACKMODE DISABLE + KEYBOARD: You need to set the attack mode to HID in the payload. Keyboard specs will still be written to /tmp/vidpid on boot as long as no overwrite is present in config.txt and the keyboard is plugged in before the Key Croc boots. You can read that file from your payloads to reutilize.
 - MATCHLESS + AUTO_ATTACKMODE ENABLE + NO KEYBOARD: No need to set the attack mode to HID in the payload. Keyboard specs will be the defaults though (ATTACKMODE HID without options); can be overwritten from config.txt.
