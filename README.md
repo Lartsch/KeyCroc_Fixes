@@ -82,6 +82,8 @@ Refer to the example configuration which is uploaded here for more information.
 - The gateway address is 172.16.32.1, subnet /24
 - DHCP range is 172.16.32.3-99
 - Right after booting there might be too little entropy for the first client to connect, try again after a minute
+- As far as I know, you can NOT use the wifi module in AP and client mode simultaneously
+- There might be issues with using some attack modes when in AP mode, need to look into this
 
 It takes about 60 seconds from plugging in the Key Croc to being able to connect to the AP.
 ### Matchless payloads fix
