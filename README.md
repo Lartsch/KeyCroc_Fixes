@@ -139,7 +139,7 @@ Refer to the example configuration which is uploaded here for more information.
 Nothing further to do.
 
 ### Other changes
-Several other small adjustments have been made.
+Several other small - yet important to know - adjustments have been made.
 
 **Payload execution behaviour**
  - Matchless payloads will run one after another, not at the same time (this prevents interference of ATTACKMODE when multiple matchless payloads are in place - ususually though, there would only be one matchless payload at a time)
