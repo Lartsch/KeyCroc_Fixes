@@ -752,7 +752,9 @@ function validate_payloads() {
   CHECK_PAYLOADS
   status=$?
   if [ $status -eq 0 ]; then
-    croclog "PAYLOADS VALID"
+    croclog "PAYLOADS VALID, making sure of correct EOL..."
+    find /root/udisk/payloads -type f -exec sed -i 's/\r$//' {} +
+    croclog "Done"
   else
     croclog "PAYLOADS INVALID"
     LED R SLOW
