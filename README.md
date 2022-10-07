@@ -1,5 +1,5 @@
 # KeyCroc_Fixes
-- Some fixes for the shi**y KeyCroc firmware/framework that has a lot of bugs.  
+- Some fixes for the KeyCroc firmware/framework that has quite some bugs.  
 - Some additional features (see below...)  
 - Some detailed notes on the KeyCroc's payload execution behavior that come too short in official docs.  
 
