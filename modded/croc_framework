@@ -705,7 +705,7 @@ function execute_non_match_payloads(){
     return
   fi
   croclog 'Locating any non-MATCH payloads to execute at startup'
-  files=$(find /root/udisk/payloads -type f -not \( -iname "DISABLED*" \) | xargs grep -cHP '^(?=[\s]*+[^#])[^#]*(MATCH)' | grep 0$ | cut -d':' -f1)
+  files=$(find /root/udisk/payloads -type f -not \( -iname "DISABLE_*" \) | xargs grep -cHP '^(?=[\s]*+[^#])[^#]*(MATCH)' | grep 0$ | cut -d':' -f1)
   if [ -z "$files" ]; then
     croclog "No enabled matchless payloads found!"
     return
